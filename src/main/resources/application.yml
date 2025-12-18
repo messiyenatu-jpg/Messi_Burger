@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: zoma-burger
+  
+  datasource:
+    url: jdbc:postgresql://localhost:5432/zoma_burger_db
+    username: zomaburger
+    password: zomaburger123
+    driver-class-name: org.postgresql.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: false
+        hbm2ddl:
+          auto: none
+  
+  security:
+    user:
+      name: admin
+      password: admin123
+      roles: ADMIN
+
+server:
+  port: 8081
+  servlet:
+    context-path: /
+
+jwt:
+  secret: ZomaBurgerSecretKeyForJWTTokenGeneration2024
+  expiration: 86400000
+
+logging:
+  level:
+    com.zomaburger: DEBUG
+    org.springframework.security: DEBUG
