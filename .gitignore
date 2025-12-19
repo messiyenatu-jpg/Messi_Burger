@@ -42,3 +42,7 @@ application-prod.yml
 ### Node modules ###
 node_modules/
 npm-debug.log*
+
+### Admin Pages (Local Only) ###
+frontend/src/pages/Admin.js
+frontend/src/pages/Admin.jsx
