@@ -15,7 +15,7 @@ import Payment from './pages/Payment';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Admin from './pages/Admin';
+// Admin import removed for security
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/admin" element={<Admin />} />
+            {/* Admin route removed for security */}
           </Routes>
           <Footer />
         </div>
